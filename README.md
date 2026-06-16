@@ -49,7 +49,7 @@ I successfully compromised all 8 machines, executing full kill-chain operations 
 * **Initial Access:** Utilized anonymous FTP to upload a customized PHP reverse shell directly into the web server's `/upload` directory.
 * **Privilege Escalation:** Stabilized the Netcat shell using Python `pty`. Leveraged a misconfigured SUID bit on the `php8.3` binary to execute a CLI command that read the `root.txt` flag.
 
-### 8. Unnamed Windows Host
+### 8. Samba (Linux)
 * **Initial Access:** Enumerated SMB shares using `smbclient` and mapped SIDs using Impacket (`lookupsid.py`) to discover valid users.
 * **Post-Exploitation Analysis:** Discovered a confidential military memo. Decoded a Vigenère cipher using CyberChef to reveal a French operations report containing intercepted NTLM hashes for the Administrator and local users.
 
